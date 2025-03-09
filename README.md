@@ -80,7 +80,7 @@ Arquivo **api.http** para executar a aplicação
 
 ![Seeds](docs/seeds.png)
 
-![Envidencia](docs/evidencia.png)
+![Evidencia](docs/evidencia.png)
 
 Se precisar de ajustes, me avise! 🚀
 
