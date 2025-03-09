@@ -1,0 +1,29 @@
+### Criar um leilão
+POST http://localhost:8080/auction
+Content-Type: application/json
+
+{
+  "product_name": "MacBook Pro",
+  "category": "notebook",
+  "description": "MacBook Pro notebook with 16GB of RAM and 1TB of SSD",
+  "condition": 1
+}
+
+### Consultar leilões
+GET http://localhost:8080/auction?status=0
+
+### Criar um lance
+POST http://localhost:8080/bid
+Content-Type: application/json
+
+{
+  "user_id": "d290f1ee-6c54-4b01-90e6-d701748f0851",
+  "auction_id": "aaf72a35-2e89-4f59-9b63-39aa84b05ef6",
+  "amount": 990.0
+}
+
+### Consultar lances de um leilão
+GET http://localhost:8080/bid/d290f1ee-6c54-4b01-90e6-d701748f0851
+
+### Consultar bid vencedor
+GET http://localhost:8080/auction/winner/aaf72a35-2e89-4f59-9b63-39aa84b05ef6
